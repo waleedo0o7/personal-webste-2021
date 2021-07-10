@@ -1,0 +1,43 @@
+<div id="portfolio" class="portfolio-one-item">
+
+    <div class="page-content">
+        <div class="container">            
+            <div class="items">
+                <div class="row p-0 mb-3 item">
+                    <div class="col-md-8">
+                        <div class="item-image">
+                            <img class="img-fluid" src="{{activatedProtfolio.mainImage}}" />
+                        </div><!-- item-image -->
+                    </div><!-- col-md-8 -->
+                    <div class="col-md-4">
+                        <div class="item-details">
+                            <h1> <a routerLink="/portfolio"> {{activatedProtfolio.projectName}} </a> </h1>
+                            <h3> <strong> type</strong> : {{activatedProtfolio.type}} </h3>
+
+                            <div class="skills"> 
+                                <div class="item" *ngFor="let item of activatedProtfolio.languages">
+                                    <img class="img-fluid" src="{{item.link}}" />
+                                </div><!-- item -->
+                            </div><!-- skills -->
+
+                            <div class="view-more">
+                                <a routerLink="/portfolio">  View Live Project </a>
+                            </div>
+
+                        </div><!-- item-details -->
+                    </div><!-- col-md-4  -->
+
+                    <div class="col-md-12">
+                        <div class="p-5 m-5 text-center">
+                            <a class="btn btn-primary">
+                                <h1 class="m-0"> build your website now </h1>
+                            </a>
+                        </div>
+                    </div><!-- col-md-12 -->
+
+                </div><!-- row item -->
+            </div><!-- items -->
+        </div><!-- container -->
+    </div><!-- page-content -->
+
+</div><!-- portfolio-list -->
